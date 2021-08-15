@@ -1,6 +1,4 @@
 {
-  "name": "@tensorflow/tfjs",
-  "version": "3.8.0",
   "devDependencies": {
     "@bazel/bazelisk": "^1.9.0",
     "@bazel/buildifier": "^4.0.1",
@@ -76,7 +74,6 @@
     "buildifier-ci": "./scripts/buildifier-ci.sh"
   },
   "dependencies": {
-    "localforage": "^1.9.0",
     "node-fetch": "^2.6.1"
   }
 }
