@@ -78,6 +78,7 @@
     "@types/offscreencanvas": "~2019.3.0",
     "@types/seedrandom": "2.4.27",
     "@types/webgl-ext": "0.0.30",
+    "localforage": "^1.9.0",
     "long": "4.0.0",
     "node-fetch": "~2.6.1",
     "seedrandom": "2.4.3"
