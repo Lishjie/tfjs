@@ -15,6 +15,7 @@
  * =============================================================================
  */
 export {GraphModel, loadGraphModel} from './executor/graph_model';
+export{GraphModel as GraphModelCustom, loadGraphModel as loadGraphModelCustom} from './executor/graph_model_custom';
 export {deregisterOp, registerOp} from './operations/custom_op/register';
 export {GraphNode, OpExecutor} from './operations/types';
 export {version as version_converter} from './version';
