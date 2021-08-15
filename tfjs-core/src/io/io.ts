@@ -21,6 +21,7 @@ import './indexed_db';
 import './local_storage';
 
 import {browserFiles} from './browser_files';
+import {browserBlobFileRequest} from'./blob_file';
 import {browserHTTPRequest, http, isHTTPScheme} from './http';
 import {concatenateArrayBuffers, decodeWeights, encodeWeights, getModelArtifactsForJSON, getModelArtifactsInfoForJSON} from './io_utils';
 import {fromMemory, withSaveHandler} from './passthrough';
@@ -31,6 +32,7 @@ import {loadWeights, weightsLoaderFactory} from './weights_loader';
 export {copyModel, listModels, moveModel, removeModel} from './model_management';
 export {
   browserFiles,
+  browserBlobFileRequest,
   browserHTTPRequest,
   concatenateArrayBuffers,
   decodeWeights,

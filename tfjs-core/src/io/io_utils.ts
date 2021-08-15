@@ -445,6 +445,38 @@ export async function getModelArtifactsForJSON(
   return modelArtifacts;
 }
 
+export const getModelArtifactsForJSONCustom = (
+  modelJSON: ModelJSON,
+  weightSpecs: Array<any>,
+  weightData: ArrayBuffer,
+): ModelArtifacts => {
+  const modelArtifacts: ModelArtifacts = {
+    modelTopology: modelJSON.modelTopology,
+    format: modelJSON.format,
+    generatedBy: modelJSON.generatedBy,
+    convertedBy: modelJSON.convertedBy,
+  };
+
+  if (modelJSON.trainingConfig != null) {
+    modelArtifacts.trainingConfig = modelJSON.trainingConfig;
+  }
+  if (modelJSON.weightsManifest != null) {
+    modelArtifacts.weightSpecs = weightSpecs;
+    modelArtifacts.weightData = weightData;
+  }
+  if (modelJSON.signature != null) {
+    modelArtifacts.signature = modelJSON.signature;
+  }
+  if (modelJSON.userDefinedMetadata != null) {
+    modelArtifacts.userDefinedMetadata = modelJSON.userDefinedMetadata;
+  }
+  if (modelJSON.modelInitializer != null) {
+    modelArtifacts.modelInitializer = modelJSON.modelInitializer;
+  }
+
+  return modelArtifacts;
+};
+
 /**
  * Populate ModelArtifactsInfo fields for a model with JSON topology.
  * @param modelArtifacts

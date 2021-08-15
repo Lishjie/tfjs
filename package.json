@@ -74,6 +74,7 @@
     "buildifier-ci": "./scripts/buildifier-ci.sh"
   },
   "dependencies": {
+    "localforage": "^1.9.0",
     "node-fetch": "^2.6.1"
   }
 }
